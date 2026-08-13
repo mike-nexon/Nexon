@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="description" content="Nexus Creative Agency - World-class web development, mobile app engineering, UI/UX design, and brand strategy for modern businesses." />
+  <meta name="keywords" content="digital agency, web development, mobile apps, UI UX design, branding, software engineering" />
+  <meta name="author" content="Nexus Digital Agency" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nexus Digital - Modern Web & Mobile Agency" />
+  <meta property="og:description" content="We design and build high-performance web applications, mobile apps, and iconic digital products." />
+  <meta property="og:image" content="assets/images/hero.jpg" />
+
+  <title>Nexus Digital | Modern Web & Mobile Agency</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="container announcement-content">
+      <span><i class="fa-solid fa-sparkles"></i> <strong>Q3 Special:</strong> Get a free UX Audit & Cost Estimate for your project!</span>
+      <button class="announcement-close" id="closeAnnouncement" aria-label="Close Announcement"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+        <span class="logo-text">NEXUS<span class="accent-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#calculator" class="nav-link">Cost Calculator</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light and Dark Mode" title="Toggle Mode">
+          <i class="fa-solid fa-moon icon-dark"></i>
+          <i class="fa-solid fa-sun icon-light"></i>
+        </button>
+
+        <a href="#calculator" class="btn btn-primary btn-sm header-cta">
+          <span>Get Quote</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+        <span class="logo-text">NEXUS<span class="accent-dot">.</span></span>
+      </a>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#services" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Services</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+        <li><a href="#calculator" class="mobile-nav-link"><i class="fa-solid fa-calculator"></i> Price Calculator</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link"><i class="fa-solid fa-star"></i> Client Reviews</a></li>
+        <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-paper-plane"></i> Contact Us</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary btn-block">Start a Project</a>
+        <div class="social-links inline">
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Main Content -->
+  <main id="mainContent">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-grid">
+          
+          <div class="hero-text-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span>Top Rated Digital Agency 2026</span>
+            </div>
+            
+            <h1 class="hero-title">
+              We Craft High-Impact <span class="gradient-text">Digital Experiences</span>
+            </h1>
+            
+            <p class="hero-description">
+              Nexus empowers ambitious brands with scalable web platforms, high-converting mobile applications, and iconic design systems that drive measurable growth.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#calculator" class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-calculator"></i>
+                <span>Estimate Project Cost</span>
+              </a>
+              <a href="#portfolio" class="btn btn-outline btn-lg">
+                <i class="fa-solid fa-eye"></i>
+                <span>Explore Portfolio</span>
+              </a>
+            </div>
+
+            <!-- Trust Badges / Stats -->
+            <div class="hero-trust-metrics">
+              <div class="metric-item">
+                <span class="metric-number" data-target="150">150+</span>
+                <span class="metric-label">Projects Launched</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-number" data-target="99.4">99.4%</span>
+                <span class="metric-label">Client Satisfaction</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric-item">
+                <span class="metric-rating">
+                  <i class="fa-solid fa-star"></i> 4.9<small>/5</small>
+                </span>
+                <span class="metric-label">From 80+ Reviews</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image & Interactive Floating Cards -->
+          <div class="hero-visual-wrapper">
+            <div class="hero-image-frame">
+              <img src="assets/images/hero.jpg" alt="Nexus Agency Creative Showcase" class="hero-image" loading="eager" />
+              <div class="hero-frame-glow"></div>
+            </div>
+
+            <!-- Floating Stat Card 1 -->
+            <div class="floating-card floating-card-1">
+              <div class="floating-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="floating-card-info">
+                <span class="card-val">+142%</span>
+                <span class="card-desc">Avg. Client Conversion</span>
+              </div>
+            </div>
+
+            <!-- Floating Stat Card 2 -->
+            <div class="floating-card floating-card-2">
+              <div class="floating-card-icon text-emerald"><i class="fa-solid fa-bolt"></i></div>
+              <div class="floating-card-info">
+                <span class="card-val">99 / 100</span>
+                <span class="card-desc">Lighthouse Performance</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Core Capabilities</span>
+          <h2 class="section-title">Solutions Built for Scale & Impact</h2>
+          <p class="section-description">
+            From initial concept to full-scale deployment, we provide end-to-end digital engineering and design services.
+          </p>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+          
+          <!-- Service Card 1 -->
+          <article class="service-card" data-service="web">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="service-title">Web App Development</h3>
+            <p class="service-desc">Custom web applications built with Next.js, React, Node, and modern microservices architecture.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> High-Speed SSR & Jamstack</li>
+              <li><i class="fa-solid fa-check"></i> Custom Admin Dashboards</li>
+              <li><i class="fa-solid fa-check"></i> API Integrations & Webhooks</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="webModal">
+              <span>Learn Deliverables</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="service-card" data-service="mobile">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3 class="service-title">Mobile App Development</h3>
+            <p class="service-desc">Cross-platform iOS and Android apps with native speed, offline sync, and fluid animations.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> React Native & Flutter</li>
+              <li><i class="fa-solid fa-check"></i> App Store & Play Store Publishing</li>
+              <li><i class="fa-solid fa-check"></i> Push Notifications & Payments</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="mobileModal">
+              <span>Learn Deliverables</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="service-card" data-service="uiux">
+            <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3 class="service-title">UI/UX & Design Systems</h3>
+            <p class="service-desc">User-centered interfaces backed by deep behavioral research, wireframes, and scalable design tokens.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Interactive Prototypes</li>
+              <li><i class="fa-solid fa-check"></i> Figma Design Systems</li>
+              <li><i class="fa-solid fa-check"></i> Accessibility (WCAG 2.1)</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="uiuxModal">
+              <span>Learn Deliverables</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </article>
+
+          <!-- Service Card 4 -->
+          <article class="service-card" data-service="brand">
+            <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3 class="service-title">Brand Strategy & Identity</h3>
+            <p class="service-desc">Position your brand ahead of competitors with cohesive visual identity, logo suites, and style guides.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Logo Systems & Guidelines</li>
+              <li><i class="fa-solid fa-check"></i> Typography & Color Systems</li>
+              <li><i class="fa-solid fa-check"></i> Marketing Assets Suite</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="brandModal">
+              <span>Learn Deliverables</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </article>
+
+          <!-- Service Card 5 -->
+          <article class="service-card" data-service="seo">
+            <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3 class="service-title">SEO & Speed Optimization</h3>
+            <p class="service-desc">Turn site speed and organic visibility into a growth engine with Core Web Vitals optimizations.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> 100/100 PageSpeed Target</li>
+              <li><i class="fa-solid fa-check"></i> Technical SEO Schema</li>
+              <li><i class="fa-solid fa-check"></i> Conversion Rate Optimization</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="seoModal">
+              <span>Learn Deliverables</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </article>
+
+          <!-- Service Card 6 -->
+          <article class="service-card" data-service="ai">
+            <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="service-title">AI Integration & Automation</h3>
+            <p class="service-desc">Supercharge business operations by integrating custom AI models, chatbots, and workflow automation.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> LLM & OpenAI Integrations</li>
+              <li><i class="fa-solid fa-check"></i> Custom AI Assistant Chatbots</li>
+              <li><i class="fa-solid fa-check"></i> Automated Data Pipelines</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="aiModal">
+              <span>Learn Deliverables</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Project Quote Calculator -->
+    <section class="section calculator-section" id="calculator">
+      <div class="container">
+        <div class="calculator-card">
+          <div class="calculator-header text-center">
+            <span class="section-subtitle">Interactive Tool</span>
+            <h2 class="section-title">Instant Project Cost Calculator</h2>
+            <p class="section-description">
+              Select your requirements below for an instant, real-time estimate of cost and timeline.
+            </p>
+          </div>
+
+          <div class="calculator-body">
+            
+            <!-- Step 1: Project Type -->
+            <div class="calc-group">
+              <label class="calc-label"><span class="step-num">1</span> Choose Project Category</label>
+              <div class="calc-options-grid" id="calcTypeGrid">
+                <button type="button" class="calc-option active" data-type="web" data-base="3500" data-time="4">
+                  <i class="fa-solid fa-globe"></i>
+                  <span class="option-title">Web Application</span>
+                  <span class="option-subtitle">Custom SaaS / Web Platform</span>
+                </button>
+
+                <button type="button" class="calc-option" data-type="mobile" data-base="4500" data-time="5">
+                  <i class="fa-solid fa-mobile-retro"></i>
+                  <span class="option-title">Mobile App</span>
+                  <span class="option-subtitle">iOS & Android App</span>
+                </button>
+
+                <button type="button" class="calc-option" data-type="brand" data-base="2200" data-time="2">
+                  <i class="fa-solid fa-palette"></i>
+                  <span class="option-title">Branding & UI/UX</span>
+                  <span class="option-subtitle">Identity & Design System</span>
+                </button>
+
+                <button type="button" class="calc-option" data-type="enterprise" data-base="7500" data-time="8">
+                  <i class="fa-solid fa-building-user"></i>
+                  <span class="option-title">Full Suite (Web + App + Brand)</span>
+                  <span class="option-subtitle">Complete Ecosystem</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Desired Features -->
+            <div class="calc-group">
+              <label class="calc-label"><span class="step-num">2</span> Select Key Features & Integrations</label>
+              <div class="calc-checkbox-grid" id="calcFeaturesGrid">
+                <label class="calc-checkbox-item">
+                  <input type="checkbox" value="auth" data-cost="500" data-weeks="1" checked />
+                  <span class="checkbox-box"><i class="fa-solid fa-check"></i></span>
+                  <span class="checkbox-label">User Auth & Permissions</span>
+                </label>
+
+                <label class="calc-checkbox-item">
+                  <input type="checkbox" value="payments" data-cost="800" data-weeks="1" checked />
+                  <span class="checkbox-box"><i class="fa-solid fa-check"></i></span>
+                  <span class="checkbox-label">Stripe / Payment Checkout</span>
+                </label>
+
+                <label class="calc-checkbox-item">
+                  <input type="checkbox" value="admin" data-cost="1200" data-weeks="1.5" checked />
+                  <span class="checkbox-box"><i class="fa-solid fa-check"></i></span>
+                  <span class="checkbox-label">Admin Management Panel</span>
+                </label>
+
+                <label class="calc-checkbox-item">
+                  <input type="checkbox" value="ai" data-cost="1500" data-weeks="2" />
+                  <span class="checkbox-box"><i class="fa-solid fa-check"></i></span>
+                  <span class="checkbox-label">AI / LLM Integration</span>
+                </label>
+
+                <label class="calc-checkbox-item">
+                  <input type="checkbox" value="seo" data-cost="600" data-weeks="0.5" />
+                  <span class="checkbox-box"><i class="fa-solid fa-check"></i></span>
+                  <span class="checkbox-label">Advanced SEO & Analytics</span>
+                </label>
+
+                <label class="calc-checkbox-item">
+                  <input type="checkbox" value="multilang" data-cost="700" data-weeks="1" />
+                  <span class="checkbox-box"><i class="fa-solid fa-check"></i></span>
+                  <span class="checkbox-label">Multi-language i18n</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 3: Speed / Timeline -->
+            <div class="calc-group">
+              <label class="calc-label"><span class="step-num">3</span> Delivery Speed</label>
+              <div class="calc-speed-options" id="calcSpeedGrid">
+                <button type="button" class="speed-btn" data-speed="standard" data-multiplier="1.0">
+                  <span>Standard Pace</span>
+                  <small>Normal Timeline</small>
+                </button>
+                <button type="button" class="speed-btn active" data-speed="priority" data-multiplier="1.15">
+                  <span>Priority Sprint</span>
+                  <small>20% Faster (+15%)</small>
+                </button>
+                <button type="button" class="speed-btn" data-speed="rush" data-multiplier="1.35">
+                  <span>🚀 Rush Dedicated</span>
+                  <small>Dedicated Team (+35%)</small>
+                </button>
+              </div>
+            </div>
+
+            <!-- Realtime Output Box -->
+            <div class="calc-summary-box">
+              <div class="summary-details">
+                <div class="summary-item">
+                  <span class="summary-label">Estimated Investment:</span>
+                  <span class="summary-value" id="calcPriceDisplay">$6,000 - $7,200</span>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-label">Estimated Timeline:</span>
+                  <span class="summary-value" id="calcTimeDisplay">6 - 8 Weeks</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-lg" id="applyQuoteBtn">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Use This Estimate in Contact Form</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Showcase Section -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Our Work</span>
+          <h2 class="section-title">Featured Success Stories</h2>
+          <p class="section-description">
+            Explore recent digital products we designed, developed, and scaled for our clients.
+          </p>
+        </div>
+
+        <!-- Portfolio Filter Tabs -->
+        <div class="portfolio-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-btn" data-filter="brand">Branding</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolioGrid">
+          
+          <!-- Project Card 1 -->
+          <article class="portfolio-card" data-category="web">
+            <div class="portfolio-image-wrapper">
+              <img src="assets/images/project1.jpg" alt="Apex Fintech Platform" loading="lazy" />
+              <div class="portfolio-overlay">
+                <button class="btn-icon view-project-btn" data-project="p1" aria-label="View Project Details">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-tags">
+                <span class="tag">Web App</span>
+                <span class="tag">Fintech</span>
+              </div>
+              <h3 class="portfolio-title">Apex Analytics Platform</h3>
+              <p class="portfolio-excerpt">A real-time financial portfolio management platform handling over $20M+ in daily transaction volume.</p>
+              <div class="portfolio-footer">
+                <span class="portfolio-stat"><i class="fa-solid fa-arrow-trend-up"></i> +210% User Retention</span>
+                <button class="btn-text view-project-btn" data-project="p1">Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="portfolio-card" data-category="mobile">
+            <div class="portfolio-image-wrapper">
+              <img src="assets/images/project2.jpg" alt="AuraFit Mobile App" loading="lazy" />
+              <div class="portfolio-overlay">
+                <button class="btn-icon view-project-btn" data-project="p2" aria-label="View Project Details">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-tags">
+                <span class="tag">Mobile App</span>
+                <span class="tag">Health & Fitness</span>
+              </div>
+              <h3 class="portfolio-title">AuraFit Tracking & AI Coach</h3>
+              <p class="portfolio-excerpt">AI-powered mobile fitness app featuring real-time biometric tracking, social workout feeds, and custom plans.</p>
+              <div class="portfolio-footer">
+                <span class="portfolio-stat"><i class="fa-solid fa-download"></i> 100k+ Downloads</span>
+                <button class="btn-text view-project-btn" data-project="p2">Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="portfolio-card" data-category="brand">
+            <div class="portfolio-image-wrapper">
+              <img src="assets/images/hero.jpg" alt="Lumina Brand System" loading="lazy" />
+              <div class="portfolio-overlay">
+                <button class="btn-icon view-project-btn" data-project="p3" aria-label="View Project Details">
+                  <i class="fa-solid fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-tags">
+                <span class="tag">Branding</span>
+                <span class="tag">Design System</span>
+              </div>
+              <h3 class="portfolio-title">Lumina AI Ecosystem Brand</h3>
+              <p class="portfolio-excerpt">Comprehensive visual brand identity, design token library, and marketing collateral for an AI unicorn startup.</p>
+              <div class="portfolio-footer">
+                <span class="portfolio-stat"><i class="fa-solid fa-award"></i> 2 Design Awards</span>
+                <button class="btn-text view-project-btn" data-project="p3">Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Client Feedback</span>
+          <h2 class="section-title">What Founders & Leaders Say</h2>
+          <p class="section-description">
+            We partner with visionaries around the world to bring high-stakes projects to life.
+          </p>
+        </div>
+
+        <div class="testimonials-slider-container">
+          <div class="testimonials-track" id="testimonialsTrack">
+            
+            <!-- Review 1 -->
+            <div class="testimonial-card active">
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Nexus rebuilt our web platform from scratch in just 6 weeks. The speed, design clarity, and code quality were exceptional. Our conversion rate jumped by 140% in the first month alone!"
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">SL</div>
+                <div class="author-info">
+                  <h4 class="author-name">Sarah Lin</h4>
+                  <span class="author-title">VP of Product, Apex Financial</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "The mobile app Nexus created for AuraFit exceeded our expectations. The UI is silky smooth and their team handled app store submission seamlessly. Highly recommended!"
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar bg-indigo">MK</div>
+                <div class="author-info">
+                  <h4 class="author-name">Marcus Vance</h4>
+                  <span class="author-title">Co-Founder & CEO, AuraFit</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "From brand guidelines to our complete Figma design system, Nexus delivered a unified look that elevated our company in front of Series A investors."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar bg-emerald">ER</div>
+                <div class="author-info">
+                  <h4 class="author-name">Elena Rostova</h4>
+                  <span class="author-title">Chief Marketing Officer, Lumina Labs</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" id="prevTestimonial" aria-label="Previous Testimonial">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots" id="sliderDots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+            <button class="slider-btn next-btn" id="nextTestimonial" aria-label="Next Testimonial">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About & Process Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <div class="about-content">
+            <span class="section-subtitle">How We Work</span>
+            <h2 class="section-title">Engineered for Precision & Speed</h2>
+            <p class="section-description">
+              We eliminate technical debt and communication bottlenecks. Our battle-tested 4-step framework guarantees on-time delivery with zero surprises.
+            </p>
+
+            <div class="process-timeline">
+              
+              <div class="process-step">
+                <div class="step-badge">01</div>
+                <div class="step-info">
+                  <h4 class="step-title">Discovery & Strategy</h4>
+                  <p class="step-desc">We align on your business goals, target user personas, technical requirements, and project KPIs.</p>
+                </div>
+              </div>
+
+              <div class="process-step">
+                <div class="step-badge">02</div>
+                <div class="step-info">
+                  <h4 class="step-title">UI/UX Architecture</h4>
+                  <p class="step-desc">Interactive Figma wireframes and design systems built for high conversions and WCAG accessibility.</p>
+                </div>
+              </div>
+
+              <div class="process-step">
+                <div class="step-badge">03</div>
+                <div class="step-info">
+                  <h4 class="step-title">Agile Engineering</h4>
+                  <p class="step-desc">Clean, modular code written in modern frameworks with weekly demo builds and automated testing.</p>
+                </div>
+              </div>
+
+              <div class="process-step">
+                <div class="step-badge">04</div>
+                <div class="step-info">
+                  <h4 class="step-title">Launch & Scale</h4>
+                  <p class="step-desc">Seamless cloud deployment, performance tuning, and 30-day post-launch warranty support.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Feature Cards Showcase -->
+          <div class="about-cards-column">
+            <div class="about-value-card">
+              <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3>100% Code Ownership</h3>
+              <p>You retain full rights and clean repositories for all code and visual assets created.</p>
+            </div>
+
+            <div class="about-value-card">
+              <div class="value-icon"><i class="fa-solid fa-comments"></i></div>
+              <h3>Transparent Communication</h3>
+              <p>Direct Slack channel access to lead engineers and designers with daily updates.</p>
+            </div>
+
+            <div class="about-value-card">
+              <div class="value-icon"><i class="fa-solid fa-rocket"></i></div>
+              <h3>Rapid MVP Deployment</h3>
+              <p>Go from concept to production-ready MVP in as little as 3 to 6 weeks.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-wrapper">
+          <div class="contact-grid">
+            
+            <!-- Contact Details Column -->
+            <div class="contact-info-col">
+              <span class="section-subtitle text-white-80">Get In Touch</span>
+              <h2 class="contact-title">Let’s Build Something Remarkable Together</h2>
+              <p class="contact-desc">
+                Have a project in mind or need expert technical consultation? Fill out the form or reach out directly.
+              </p>
+
+              <div class="contact-details-list">
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <span class="detail-label">Email Us</span>
+                    <a href="mailto:hello@nexusdigital.io" class="detail-value">hello@nexusdigital.io</a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div>
+                    <span class="detail-label">Call Us</span>
+                    <a href="tel:+18005550199" class="detail-value">+1 (800) 555-0199</a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <span class="detail-label">Headquarters</span>
+                    <span class="detail-value">San Francisco, CA & Remote Global</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-socials">
+                <span class="social-label">Follow Nexus:</span>
+                <div class="social-links">
+                  <a href="#" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form Column -->
+            <div class="contact-form-col">
+              <form class="contact-form" id="contactForm" novalidate>
+                <h3 class="form-heading">Start a Conversation</h3>
+                
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Alex Morgan" required />
+                  <span class="error-msg" id="nameError">Please enter your name</span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">Email Address <span class="required">*</span></label>
+                    <input type="email" id="contactEmail" name="email" class="form-input" placeholder="alex@company.com" required />
+                    <span class="error-msg" id="emailError">Please enter a valid email</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactPhone" class="form-label">Phone Number</label>
+                    <input type="tel" id="contactPhone" name="phone" class="form-input" placeholder="+1 (555) 000-0000" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactService" class="form-label">Project Type</label>
+                    <select id="contactService" name="service" class="form-select">
+                      <option value="web">Web Application</option>
+                      <option value="mobile">Mobile App Development</option>
+                      <option value="uiux">UI/UX Design & System</option>
+                      <option value="brand">Brand Strategy</option>
+                      <option value="ai">AI Integration</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactBudget" class="form-label">Budget Range</label>
+                    <select id="contactBudget" name="budget" class="form-select">
+                      <option value="$3k-$5k">$3,000 - $5,000</option>
+                      <option value="$5k-$10k" selected>$5,000 - $10,000</option>
+                      <option value="$10k-$25k">$10,000 - $25,000</option>
+                      <option value="$25k+">$25,000+</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">Project Summary / Notes <span class="required">*</span></label>
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="4" placeholder="Tell us about your goals, timeline, and scope..." required></textarea>
+                  <span class="error-msg" id="messageError">Please describe your project</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitContactBtn">
+                  <span>Send Inquiry</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+            <span class="logo-text">NEXUS<span class="accent-dot">.</span></span>
+          </a>
+          <p class="footer-desc">
+            Empowering global enterprises and startups with cutting-edge web, mobile, and digital solutions.
+          </p>
+          <div class="footer-newsletter">
+            <label for="newsletterEmail" class="newsletter-label">Subscribe to Engineering Insights</label>
+            <div class="newsletter-form">
+              <input type="email" id="newsletterEmail" placeholder="Enter your email" class="newsletter-input" />
+              <button class="btn btn-primary btn-icon-only" id="newsletterBtn" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Mobile Applications</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Brand Identity</a></li>
+            <li><a href="#services">AI Automation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#portfolio">Our Portfolio</a></li>
+            <li><a href="#calculator">Price Calculator</a></li>
+            <li><a href="#testimonials">Client Reviews</a></li>
+            <li><a href="#about">Development Process</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Legal & Info</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Security Statement</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Nexus Digital Agency. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#hero" class="back-to-top" id="backToTopBtn">
+            <span>Back to top</span>
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Quick Navigation">
+    <a href="#hero" class="bottom-nav-item active" id="bnav-home">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="#services" class="bottom-nav-item" id="bnav-services">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Services</span>
+    </a>
+    <a href="#calculator" class="bottom-nav-item highlight-item" id="bnav-calc">
+      <div class="highlight-icon"><i class="fa-solid fa-calculator"></i></div>
+      <span>Quote</span>
+    </a>
+    <a href="#portfolio" class="bottom-nav-item" id="bnav-portfolio">
+      <i class="fa-solid fa-briefcase"></i>
+      <span>Work</span>
+    </a>
+    <a href="#contact" class="bottom-nav-item" id="bnav-contact">
+      <i class="fa-solid fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- Interactive Project Details Modal -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="modalBody">
+        <!-- Content injected dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
